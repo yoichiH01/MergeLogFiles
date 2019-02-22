@@ -12,7 +12,7 @@ Following is an example for Qlik Sense Scheduler logs
 5. Execute LogMerge.bat with Administor priviledge again wait until execution finish
 6. Merged Logs be generated into "Merge" Folder under subfolders.
 
-7.If you want to purge "C:\Log", execute CleanLog.bat with Administrator priviledge
+7. If you want to purge "C:\Log", execute CleanLog.bat with Administrator priviledge
 
 
 # Disclaimer
