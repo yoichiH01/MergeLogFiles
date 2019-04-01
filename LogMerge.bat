@@ -29,6 +29,16 @@ rmdir /s /q C:\Log\BrokerService\Merge
 rmdir /s /q C:\Log\AppMigration\Merge
 rmdir /s /q C:\Log\OdagService\Merge
 
+rmdir /s /q C:\Log\AboutService\Merge
+rmdir /s /q C:\Log\AppDistributionService\Merge
+rmdir /s /q C:\Log\CapabilityService\Merge
+rmdir /s /q C:\Log\ConnectorRegistryProxy\Merge
+rmdir /s /q C:\Log\ConverterService\Merge
+rmdir /s /q C:\Log\DataProfiling\Merge
+rmdir /s /q C:\Log\DepGraphService\Merge
+rmdir /s /q C:\Log\HubService\Merge
+
+
 rmdir /s /q C:\Log\Nprinitng\Merge
 
 rmdir /s /q C:\Log\ManagementService\Merge
@@ -48,6 +58,7 @@ mkdir C:\Log\Proxy\Merge
 mkdir C:\Log\BrokerService\Merge
 mkdir C:\Log\AppMigration\Merge
 mkdir C:\Log\OdagService\Merge
+mkdir C:\Log\HubService\Merge
 
 mkdir C:\Log\Nprinitng\Merge
 mkdir C:\Log\ManagementService\Merge
@@ -72,7 +83,8 @@ Type C:\Log\Engine\Trace\*_Session_* > C:\Log\Engine\Merge\TraceSessionEngineMer
 Type C:\Log\Engine\Trace\*_QixPerformance_* > C:\Log\Engine\Merge\TelemetryMerge.log
 Type C:\Log\Engine\System\*_Service_* > C:\Log\Engine\Merge\SystemServiceEngineMerge.log
 Type C:\Log\Engine\Audit\*_AuditActivity_* > C:\Log\Engine\Merge\AuditActivityEngineMerge.log
-
+Type C:\Log\Engine\*Start_Engine* > C:\Log\Engine\Merge\StartEngineMerge.log
+Type C:\Log\Engine\*Exit_Engine* > C:\Log\Engine\Merge\ExitEngineMerge.log 
 
 
 Type C:\Log\Scheduler\Trace\*_System_* > C:\Log\Scheduler\Merge\TraceSystemSchedulerMerge.log
@@ -91,6 +103,9 @@ Type C:\Log\Proxy\Audit\*_AuditSecurity_* > C:\Log\Proxy\Merge\AuditSecurityProx
 
 Type C:\Log\BrokerService\*access* > C:\Log\BrokerService\Merge\BrokerServiceAccessMerge.log
 Type C:\Log\BrokerService\*00.log* > C:\Log\BrokerService\Merge\BrokerServiceMerge.log
+Type C:\Log\HubService\*access* > C:\Log\HubService\Merge\HubServiceAccessMerge.log
+Type C:\Log\HubService\*00.log* > C:\Log\HubService\Merge\HubServiceMerge.log
+
 
 Type C:\Log\AppMigration\*.log* > C:\Log\AppMigration\Merge\AppMigrationMerge.log
 
